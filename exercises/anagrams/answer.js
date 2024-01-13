@@ -1,4 +1,7 @@
 //1
+
+//to get this part, check RegExp -> character classes in MDN
+
 function anagrams(stringA, stringB) {
     const aCharMap = buildCharMap(stringA);
     const bCharMap = buildCharMap(stringB);

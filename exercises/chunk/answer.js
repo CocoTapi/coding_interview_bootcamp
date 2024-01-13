@@ -1,25 +1,17 @@
 //1
-
-//create empty array to hold chunks called "chunked"
-//for each element in the unchunked array
-    //retrieve the last element in 'chunked'
-    //if last element does not exist, or if its length is equal to chunk size
-        //push a new chunk into "chunked" with the current element
-    //else add the current element into the chunk
-
     function chunk(array, size) {
         const newArr = [];
-    
-        for (let element of array) {
-            const last = newArr[newArr.length - 1];
-    
-            if (!last || last.length === size) {
-                newArr.push([element]);
-            } else {
-                last.push(element);
+        
+            for (let element of array) {
+                const lastSubArr = newArr[newArr.length - 1];
+        
+                if (!lastSubArr || lastSubArr.length === size) {
+                    newArr.push([element]);
+                } else {
+                    lastSubArr.push(element);
+                }
             }
-        }
-        return newArr;
+            return newArr;
     }
 
 //2

@@ -9,7 +9,18 @@
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
 function chunk(array, size) {
+    const newArr = [];
     
+        for (let element of array) {
+            const lastSubArr = newArr[newArr.length - 1];
+    
+            if (!lastSubArr || lastSubArr.length === size) {
+                newArr.push([element]);
+            } else {
+                lastSubArr.push(element);
+            }
+        }
+        return newArr;
 }
 
 module.exports = chunk;

@@ -25,14 +25,10 @@ function circular(list) {
 */
 
 function circular(list) {
-    if (list.size() < 2) {
-        return false;
-    } 
-
     let slow = list.head;
     let fast = list.head;
 
-    while(true) {
+    while(fast.next && fast.next.next) {
         if(fast === null) {
             return false;
         }
@@ -44,5 +40,5 @@ function circular(list) {
             return true;
         }
     } 
-
+    return false;
 }

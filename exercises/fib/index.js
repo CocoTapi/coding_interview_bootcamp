@@ -8,16 +8,16 @@
 // Example:
 //   fib(4) === 3
 
+/*
+1. check if the result for nth number is already memoize. If there is, return the number.
+2. set the base case: if the target number is less than 2, return the number. 
+3. recursively caliculate Fibonacci numbers with memoization. increment two before numbers.
+4. memoize the result for the target number
+5. return the caliculated number.   
+*/
 
-function fib(n, memo = []) {
-    if (memo[n] !== undefined) return memo[n];
-    //memo[0] & memo[1] === undefined
-  
-   if (n < 2) return n;
-   let result = fib(n - 1, memo) + fib(n - 2, memo);
-   memo[n] = result;
-   console.log(memo);
-   return result;
+function fib(n) {
+   
 }
 
 

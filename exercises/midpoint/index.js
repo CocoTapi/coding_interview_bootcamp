@@ -14,16 +14,9 @@
 
 //if there are even number of items, you will return one before the actual midpoint
 
-function midpoint(list) {
-    let slow = list.getFirst(); //list.head
-    let fast = list.getFirst();
 
-    while(fast.next && fast.next.next) {
-        slow = slow.next;
-        fast = fast.next.next;
-    }
+function midpoint(list) {
     
-    return slow;
 }
 
 module.exports = midpoint;

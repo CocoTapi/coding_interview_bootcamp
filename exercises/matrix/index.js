@@ -16,7 +16,7 @@
 //     [10,  9,  8, 7]]
 
 function matrix(n) {
-   
+  
 }
 
 module.exports = matrix;

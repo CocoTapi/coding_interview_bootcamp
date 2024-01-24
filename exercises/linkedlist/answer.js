@@ -13,6 +13,8 @@ class LinkedList {
     constructor() {
         this.head = null;
     }
+
+    //don't forget the current head goes next!!!
     insertFirst(data) {
         //Answer 1
         // const newNode = new Node(data, this.head);

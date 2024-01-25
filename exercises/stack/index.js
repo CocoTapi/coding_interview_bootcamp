@@ -11,7 +11,7 @@
 //   s.pop(); // returns 1
 
 class Stack {
-    
+   
 }
 
 module.exports = Stack;

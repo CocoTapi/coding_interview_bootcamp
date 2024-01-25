@@ -6,6 +6,14 @@ function reverse(str) {
 }
 
 //2
+
+/*
+0. make a empty string. 
+1. iterate through each letter 
+    a. put larger index to the front and smaller one to the back
+2. return the result
+*/
+
 function reverse(str) {
     let revered = '';
 

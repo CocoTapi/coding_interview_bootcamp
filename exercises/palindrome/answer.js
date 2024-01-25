@@ -1,4 +1,10 @@
 //1
+
+/*
+1. make a reversed string
+2. compare original string and reversed one. 
+*/
+
 function palindrome(str) {
     const revered = str.split('').reverse().join('');
 

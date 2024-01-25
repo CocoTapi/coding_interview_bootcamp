@@ -17,6 +17,22 @@ function pyramid(n) {
 }
 
 //2
+
+/*
+1. Base case: if n is equal to row, exit the function
+2. if the length of a level of string, 
+    a. print the level
+    b. move to the next row by calling the function
+3. make a variable to set the middle point of the level.
+4. make a variable to add it to the string in the same level
+5. if the length of the level is greater than and equal to midpoint minus row and 
+    the kength of the level is less than and equal to the midpoint plus row,
+    a. add '#' to the level
+6. if none of the above, 
+    b. add space to the level
+7. keep adding it to the level by calling the function
+*/
+
 function pyramid(n, row = 0, level = '') {
     if (n === row){
         return;

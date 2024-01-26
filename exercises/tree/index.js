@@ -11,11 +11,40 @@
 // function that gets called with each element in the tree
 
 class Node {
-    
+    constructor(data){
+        this.data = data;
+        this.children = [];
+    }
+    add(val) {
+        const newNode = new Node(val);
+        this.data.children.push(newNode);
+    }
+    remove() {
+        this.children
+    }
 }
 
 class Tree {
-   
+   constructor() {
+    this.root = null;
+   }
+   traverseBF() {
+    if(!this.root) return;
+
+    const lookup = [this.root];
+
+    while(lookup.length) {
+        let node = lookup.shift();
+
+        if(node.children) {
+            lookup.push(node.children);
+        }
+    }
+    return;
+   }
+   traverseDF() {
+
+   }
 }
 
 module.exports = { Tree, Node };

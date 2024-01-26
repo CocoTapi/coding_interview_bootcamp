@@ -17,8 +17,9 @@
 //       '### '
 //       '####'
 
-function steps(n, row = 0, stair = '') {
-    
+
+function steps() {
+   
 }
 
 module.exports = steps;

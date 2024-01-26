@@ -67,5 +67,37 @@
         const add = stair.length <= row ? '#' : ' ';
         steps(n, row, stair + add);
     }
+
+    //4
+
+    /*
+1. base case: if n = row, exit the function
+2. if the length of string = n, 
+    a. print the string,
+    b. move to the next row by calling the function
+3. make an empty variable to store adding item
+4. if the length of stair < row, 
+    a. add #
+    b. else, add a space
+5. repeat 4 until by calling the function with adding item.
+*/
+function steps(n, row = 0, stair = '') {
+    if (row === n) return;
+
+    if (stair.length === n) {
+        console.log(stair);
+        return steps(n, row += 1);
+    }
+
+    let add;
+
+    if(stair.length <= row) {
+        add = '#';
+    } else {
+        add = ' ';
+    }
+
+    return steps(n, row, stair + add);
+}
     
 

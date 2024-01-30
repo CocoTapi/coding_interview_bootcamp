@@ -16,6 +16,16 @@ class Queue {
     }
 }
 
+/*
+1. make a new empty queue
+2. while souceOne or sourceTwo has a node,
+    a. if sourceOne has a node
+        i. remove a node from sourceOne and add it into the new Queue
+    b. if sourceTwo has a node
+        i. remove a node from sourceTwo and add it into the new Queue
+3. return the new Queue
+*/
+
 function weave(sourceOne, sourceTwo) {
     const q = new Queue;
 

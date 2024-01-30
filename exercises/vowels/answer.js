@@ -34,7 +34,7 @@ function vowels(str) {
 4. return the count
 */
 function vowels(str) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    const vowels = ['a', 'e', 'i', 'o', 'u'];  //O(5) => O(1)
     let counter = 0;
 
     for(let char of str.toLowerCase()) {

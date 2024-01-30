@@ -23,3 +23,27 @@ function vowels(str) {
     //.match returns the item that matches or if zero match, return null. 
     return matches ? matches.length : 0;
 }
+
+//3
+/*
+1. set a variable to store vowels. 
+2. set a variable to count vowels. 
+3. iterate through a string
+    a. if a letter is one of vowels, 
+        i. add count
+4. return the count
+*/
+function vowels(str) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    let counter = 0;
+
+    for(let char of str.toLowerCase()) {
+        for(let v of vowels) {
+            if (v === char) {
+                counter++;
+            }
+        }
+    }
+
+    return counter;
+}
